@@ -1,0 +1,394 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Poppins:wght@400;500;700;800&display=swap');
+
+/*
+font-family: "Oswald", sans-serif;
+font-family: "Poppins", sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+img{
+    max-width: 100%;
+
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background-color:#f5f5f5 ;
+    padding: 70px 0 ;
+}
+
+/*.menu*/
+.contenedor_menu{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo{
+    font-size: 25px;
+    color: #111111;
+    text-transform: uppercase;
+    font-weight: 800px; ;
+}
+
+
+/*no funciona colocando los parametros en una sola linea
+por ende toco colocarlo por separado los ul, li, a*/
+.navegacion_Botones ul {
+    list-style: none;
+}
+
+.navegacion_Botones li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navegacion_Botones a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+}
+
+#Menu{
+    display: none;
+}
+
+
+.Icono_Menu{
+    width: 25px;
+    cursor: pointer;
+    display:none;
+}
+
+.contenedor_infografia{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 0 200px;
+    
+}
+
+.header_img{
+    flex-basis: 50%;
+    text-align: center;
+
+}
+.Texo_de_infografia{
+    flex-basis: 50%;
+    text-align: center;
+
+}
+
+.Texo_de_infografia h1{
+   font-size: 90px;
+   text-transform: uppercase;
+   line-height: 1;
+   color: #111111;
+   font-family:'Oswald', sans-serif;
+   margin-bottom: 15px;
+    
+}
+
+
+
+
+.Texo_de_infografia p{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn1{
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #111111;
+    color: #f5f5f5;
+    border-radius: 5px;
+
+}
+
+
+.contenedor_ofertas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.oferta_uno,
+.oferta_dos,
+.oferta_tres {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #131313;
+    border-radius: 5px;
+    margin: 10px;
+    flex: 0 1 calc(33.3333% - 20px); 
+}
+
+.imagen_oferta_uno img,
+.imagen_oferta_dos img,
+.imagen_oferta_tres img {
+    max-width: 100%;
+}
+
+.texto_oferta_uno h3,
+.texto_oferta_dos h3,
+.texto_oferta_tres h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.btn2,
+.btn3,
+.btn4 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.btn2:hover,
+.btn3:hover,
+.btn4:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+    background-color: #111; /* Cambia al color de fondo al pasar el ratón */
+    color: #fdf908; /* Cambia al color dorado al pasar el ratón */
+}
+
+
+/* Estilos para la sección de productos */
+.contenedor_productos {
+    text-align: center;
+    padding: 20px;
+}
+/*titulo "vehiculos" */
+h2 {
+    font-size: 24px;
+    color: #000000; /* Color dorado para el título */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Estilos para cada producto */
+.contenedor_del_Producto_uno,
+.contenedor_del_Producto_dos,
+.contenedor_del_Producto_tres,
+.contenedor_del_Producto_cuarto,
+.contenedor_del_Producto_cinco,
+.contenedor_del_Producto_seis {
+    display: inline-block;
+    text-align: left;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Ajusta este valor para el espacio entre productos */
+    border: 1px solid #030303; /* Borde dorado */
+    border-radius: 10px;
+    background-color: #e8e8e8; /* Fondo negro */
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.contenedor_del_Producto_uno:hover,
+.contenedor_del_Producto_dos:hover,
+.contenedor_del_Producto_tres:hover,
+.contenedor_del_Producto_cuarto:hover,
+.contenedor_del_Producto_cinco:hover,
+.contenedor_del_Producto_seis:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+
+}
+
+/* Estilos para las imágenes de los productos */
+.Vehículo_uno img,
+.Vehículo_dos img,
+.Vehículo_tres img,
+.Vehículo_cuatro img,
+.Vehículo_cinco img,
+.Vehículo_seis img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para los textos de los productos */
+.texto_producto_uno h3,
+.texto_producto_dos h3,
+.texto_producto_tres h3,
+.texto_producto_cuatro h3,
+.texto_producto_cinco h3,
+.texto_producto_seis h3 {
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+    color: #000000; /* Color dorado para los títulos */
+    margin: 10px 0;
+}
+
+.texto_producto_uno p,
+.texto_producto_dos p,
+.texto_producto_tres p,
+.texto_producto_cuatro p,
+.texto_producto_cinco p,
+.texto_producto_seis p {
+    font-size: 16px;
+    color: #000000; /* Color blanco para el texto */
+    margin: 5px 0;
+}
+
+/* Estilos para los precios */
+.precio1,
+.precio2,
+.precio3,
+.precio4,
+.precio5,
+.precio6 {
+    font-size: 18px;
+    color: #000000; /* Color dorado para los precios */
+    margin: 5px 0;
+}
+
+/* Estilos para los botones de información */
+.Mas_Informacion_uno,
+.Mas_Informacion_dos,
+.Mas_Informacion_tres,
+.Mas_Informacion_cuatro,
+.Mas_Informacion_cinco,
+.Mas_Informacion_seis {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Color dorado para los botones */
+    color: #ffffff; /* Color de fondo para el texto de los botones */
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.Mas_Informacion_uno:hover,
+.Mas_Informacion_dos:hover,
+.Mas_Informacion_tres:hover,
+.Mas_Informacion_cuatro:hover,
+.Mas_Informacion_cinco:hover,
+.Mas_Informacion_seis:hover {
+    background-color: #111; /* Cambia al color de fondo al pasar el ratón */
+    color: #fdf908; /* Cambia al color dorado al pasar el ratón */
+}
+
+
+
+/* Estilos para la sección de características */
+.contenedor_Descripcion {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilos para cada tarjeta de características */
+.contenedor_Descripcion_uno,
+.contenedor_Descripcion_dos,
+.contenedor_Descripcion_tres {
+    flex: 0 1 calc(33.3333% - 20px); /* Ajusta este valor para el espacio entre tarjetas */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f7f7f7; /* Color de fondo retro */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra para efecto retro */
+}
+
+.contenedor_Descripcion_uno:hover,
+.contenedor_Descripcion_dos:hover,
+.contenedor_Descripcion_tres:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Estilos para las imágenes de las tarjetas */
+.contenedor_Descripcion_uno img,
+.contenedor_Descripcion_dos img,
+.contenedor_Descripcion_tres img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para los textos de las tarjetas */
+.contenedor_Descripcion_uno h3,
+.contenedor_Descripcion_dos h3,
+.contenedor_Descripcion_tres h3 {
+    font-size: 18px;
+    color: #333; /* Color de texto retro */
+    margin: 10px 0;
+}
+
+.contenedor_Descripcion_uno p,
+.contenedor_Descripcion_dos p,
+.contenedor_Descripcion_tres p {
+    font-size: 14px;
+    color: #777; /* Color de texto gris */
+    margin: 10px 0;
+}
+
+/* Estilos para la animación futurista */
+.contenedor_Descripcion_uno::before,
+.contenedor_Descripcion_dos::before,
+.contenedor_Descripcion_tres::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #FFD700, transparent);
+    transition: left 0.3s ease;
+}
+
+.contenedor_Descripcion_uno:hover::before,
+.contenedor_Descripcion_dos:hover::before,
+.contenedor_Descripcion_tres:hover::before {
+    left: 100%; /* Muestra la animación futurista al pasar el ratón */
+}
+
+
+
+
+
+
+
+
+
