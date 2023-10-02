@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: silver; /* Fondo plateado */
+    color: black; /* Texto negro */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: red; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: red; /* Texto rojo */
+}
+
+/* Estilos para los carros */
+.carro {
+    border: 1px solid silver; /* Borde plateado */
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background-color: silver; /* Fondo plateado */
+}
+
+.carro img {
+    max-width: 200px;
+    max-height: 150px;
+}
+
+/* Estilos para los botones de cotización */
+.carro button {
+    background-color: red; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: silver; /* Fondo plateado */
+    padding: 10px;
+}
+
+label {
+    color: black; /* Texto negro */
+    display: block;
+    margin-bottom: 6px;
+    font-size: 20px;
+
+}
+
+input[type="text"]
+input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black; /* Borde negro */
+}
+
+select#obsequio {
+    width: 30%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid black; /* Borde negro */
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+}
+
+button[type="submit"] {
+    background-color: red; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos para el resultado de cotización */
+#resultadoCotizacion {
+    background-color: silver; /* Fondo plateado */
+    padding: 10px;
+}
