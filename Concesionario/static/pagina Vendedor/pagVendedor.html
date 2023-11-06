@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cotizador de Carros</title>
+    <link rel="stylesheet" type = "text/css" href="estilo.css">
+<body>
+    <h1>Cotizador de Carros</h1>
+
+    <!-- Listado de carros con imágenes -->
+    <div class="carro">
+        <img src="imagenes/carro.jpg" alt="Carro 1">
+        <h2>Carro 1</h2>
+        <p>Descripción del carro 1.</p>
+        <button onclick="cotizar('Carro 1')">Cotizar</button>
+    </div>
+
+    <div class="carro">
+        <img src="imagenes/carro.jpg" alt="Carro 2">
+        <h2>Carro 2</h2>
+        <p>Descripción del carro 2.</p>
+        <button onclick="cotizar('Carro 2')">Cotizar</button>
+    </div>
+
+    <!-- Formulario de cotización -->
+    <h2>Formulario de Cotización</h2>
+    <form id="cotizacionForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br>
+
+        <label for="carro">Carro a Cotizar:</label>
+        <input type="text" id="carroCotizar" name="carroCotizar" readonly><br>
+
+        <!-- Lista desplegable de obsequios -->
+        <label for="obsequio">Selecciona un Obsequio:</label>
+        <select id="obsequio" name="obsequio">
+            <option value="Ninguno">Ninguno</option>
+            <option value="Descuento en Accesorios">Descuento en Accesorios</option>
+            <option value="Mantenimiento Gratuito por 1 Año">Mantenimiento Gratuito por 1 Año</option>
+            <option value="Tarjeta de Combustible">Tarjeta de Combustible</option>
+        </select><br>
+
+        <button type="submit">Enviar Cotización</button>
+    </form>
+
+    <!-- Resultados de Cotización -->
+    <h2>Resultados de Cotización</h2>
+    <div id="resultadoCotizacion"></div>
+
+    <script>
+        function cotizar(carro) {
+            document.getElementById("carroCotizar").value = carro;
+        }
+
+        document.getElementById("cotizacionForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById("nombre").value;
+            const correo = document.getElementById("correo").value;
+            const carroCotizar = document.getElementById("carroCotizar").value;
+            const obsequio = document.getElementById("obsequio").value; // Obtener el obsequio seleccionado
+
+            // Puedes agregar aquí la lógica para enviar la cotización por correo o almacenarla en una base de datos
+
+            const resultadoCotizacion = `Nombre: ${nombre}, Correo Electrónico: ${correo}, Carro a Cotizar: ${carroCotizar}, Obsequio: ${obsequio}`;
+
+            // Mostrar el resultado de la cotización en la página
+            document.getElementById("resultadoCotizacion").innerHTML = resultadoCotizacion;
+        });
+    </script>
+</body>
+<html>
