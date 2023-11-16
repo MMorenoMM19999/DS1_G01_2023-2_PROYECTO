@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3498db; /* Azul claro */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff; /* Blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #3498db; /* Azul claro */
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #3498db; /* Azul claro */
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: #fff; /* Blanco */
+    border: 1px solid #3498db; /* Azul claro */
+    border-radius: 4px;
+    color: #3498db; /* Azul claro */
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2980b9; /* Azul medio */
+}
+
+button {
+    background-color: #3498db; /* Azul claro */
+    color: #fff; /* Blanco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9; /* Azul medio en el hover */
+}

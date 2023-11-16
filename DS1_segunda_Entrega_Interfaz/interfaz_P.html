@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estiloP.css">
+
+    <title>Sistema de Registro</title>
+   
+</head>
+<body>
+    <h2>Sistema de Registro</h2>
+    
+    <!-- Botones -->
+    <a class="boton-azul" href="/EdicionEmpleados.html" >Registro Empleados</a>
+    <a class="boton-azul" href="/formularioResgistroCliente.html">Registro Cliente</a>
+    <a class="boton-azul" href="/fromularioRegistroReparacion.html">Registro Reparaciones</a>
+    <a class="boton-azul" href="/formularioRegistroRepuesto.html">Registro Repuestos</a>
+    <a class="boton-azul" href="/formularioRegistroRepuesto.html">Registro Automóviles</a>
+    
+    <!-- Título -->
+    <h2 id="informacion-actual">Información Actual</h2>
+    
+    <!-- Selector de opciones -->
+    <select id="opciones" onchange="cargarTabla()">
+        <option value="carros-actuales">Carros Actuales</option>
+        <option value="clientes-actuales">Clientes Actuales</option>
+        <option value="clientes-actuales">Empleados Actuales</option>
+        <option value="respuestos-actuales">Repuestos Actuales</option>
+        <option value="reparaciones-actuales">Reparaciones Actuales</option>
+    </select>
+
+    <!-- Tabla -->
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>cantidad </th>
+                <th>Descripción</th>
+                
+                <!-- Añade más columnas según sea necesario -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí se mostrará la información -->
+        </tbody>
+    </table>
+
+    <!-- Botones Borrar y Modificar -->
+    <button class="boton-borrar" onclick="borrarSeleccion()">Borrar</button>
+    <button class="boton-modificar" onclick="modificarSeleccion()">Modificar</button>
+
+    <a href="/fomularioInicio.html" class="">Volver </a>
+</body>
+</html>

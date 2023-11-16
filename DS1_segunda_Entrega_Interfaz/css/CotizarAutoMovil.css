@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #ff0000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    max-width: 80%;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: border-color 0.3s ease-in-out;
+    display: flex; /* Cambio a un diseño flexbox para colocar los elementos en línea */
+    flex-wrap: wrap; /* Envolver a la siguiente línea si no hay espacio suficiente */
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+}
+
+.form-container:hover {
+    border-color: #fff;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap; /* Envolver a la siguiente línea si no hay espacio suficiente */
+    width: 100%;
+}
+
+label {
+    margin-top: 10px;
+    color: #ff0000;
+    flex: 1; /* Que ocupe todo el ancho disponible en el diseño flexbox */
+}
+
+input, select {
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ff0000;
+    color: #000;
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    flex: 2; /* Que ocupe dos veces el ancho del label en el diseño flexbox */
+}
+
+input:hover, select:hover {
+    border-color: #fff;
+    color: #ff0000;
+}
+
+button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #fff;
+}
+
+/* Agrega tus estilos específicos aquí */

@@ -1,0 +1,64 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Fondo gris claro */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+}
+
+.formulario {
+    text-align: center;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2); /* Sombra */
+    max-width: 300px; /* Ancho máximo del formulario */
+    width: 100%; /* Asegura que el formulario no sea más ancho que el viewport */
+}
+
+h2 {
+    color: #007bff; /* Texto azul */
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    margin-bottom: 20px; /* Espaciado entre los campos de entrada */
+    padding: 15px;
+    width: calc(100% - 30px); /* Ancho del 100% menos el padding */
+    border: none;
+    border-bottom: 2px solid #007bff; /* Línea de fondo azul */
+    background-color: transparent; /* Fondo transparente */
+    font-size: 16px;
+    color: #333; /* Texto gris oscuro */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-bottom: 2px solid #0056b3; /* Cambio de color al enfocar */
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #007bff; /* Fondo azul */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Animación de color de fondo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+.mensaje {
+    margin-top: 20px;
+    color: #555; /* Texto gris */
+    font-size: 14px;
+}
+
+

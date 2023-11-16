@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/EstiloEdicionEmpleado.css">
+    <title>Editar Información de Empleado</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Registar Información de Empleado</h2>
+        <form action="#" method="post" id="employeeForm">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="nombre">Apellidos:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="fechaNacimiento">Fecha de inicio:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <label for="dni">DNI o NIE:</label>
+            <input type="text" id="dni" name="dni" required>
+
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" required>
+
+            <label for="modoContacto">Modo de Contacto:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+            <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
+
+            
+
+            <label for="cargo">Cargo en la Empresa:</label>
+            <input type="text" id="cargo" name="cargo" required>
+
+            
+            <button type="submit">Guardar Cambios</button>
+            <a class="boton-azul" href="/interfaz_P.html">Volver</a>
+        </form>
+    </div>
+    <script src="js/ValidacionInicio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/CotizarAutoMovil.css">
+    <title>Cotización de Vehículos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Información Personal</h2>
+            <form id="personal-info-form">
+                <label for="full-name">Nombre y Apellidos:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Ingrese su nombre y apellidos">
+
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id" placeholder="Ingrese su ID">
+
+                <h2>Información dJel Auto de su Interés</h2>
+                <label for="year">Año:</label>
+                <select id="year" name="year">
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+
+                <label for="brand">Marca:</label>
+                <select id="brand" name="brand">
+                    <option value="Maybach GLS">Maybach GLS</option>
+                    <option value="EQS">EQS</option>
+                    <option value="EQB">EQB</option>
+                    <option value="EQE SUV">EQE SUV</option>
+                    <option value="EQE">EQE</option>
+                    <option value="EQA">EQA</option>
+                </select>
+
+                <label for="model">Modelo:</label>
+                <input type="text" id="model" name="model" placeholder="Ingrese el modelo">
+
+                <label for="version">Versión:</label>
+                <input type="text" id="version" name="version" placeholder="Ingrese la versión">
+
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color" placeholder="Ingrese el color">
+
+                <label for="mileage">Kilometraje:</label>
+                <input type="text" id="mileage" name="mileage" placeholder="Ingrese el kilometraje">
+
+                <label for="price">Precio:</label>
+                <select id="price" name="price">
+                    <option value="812900000">$812,900,000</option>
+                    <option value="689900000">$689,900,000</option>
+                    <option value="328900000">$328,900,000</option>
+                    <option value="469900000">$469,900,000</option>
+                    <option value="419900000">$419,900,000</option>
+                    <option value="318900000">$318,900,000</option>
+                </select>
+
+                <label for="financing">Financiación:</label>
+                <select id="financing" name="financing">
+                    <option value="12">12 cuotas</option>
+                    <option value="24">24 cuotas</option>
+                    <option value="48">48 cuotas</option>
+                </select>
+
+                <h2>Apartado de Resultado de Financiación</h2>
+                <div id="financing-result"></div>
+
+                <button type="button" onclick="calculateFinancing()">Calcular Financiación</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

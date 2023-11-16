@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formularioRegistroReparacion.css">
+
+    <title>Formulario de Registro de Reparación</title>
+</head>
+<body>
+
+    <h2>Registro de Reparación de Auto</h2>
+
+    <form action="#" method="post">
+        <label for="numeroOrden">Número de Orden:</label>
+        <input type="text" id="numeroOrden" name="numeroOrden" >
+
+        <label for="numeroPlaca">Número de Placa:</label>
+        <input type="text" id="numeroPlaca" name="numeroPlaca" >
+
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" >
+
+        <label for="trabajos">Trabajos Realizados:</label>
+        <select id="trabajos" name="trabajos" >
+            <option value="lavado">Lavado</option>
+            <option value="reparacion">Reparación Mayor</option>
+            <option value="mantenimiento">Mantenimiento</option>
+        </select>
+
+        <label for="idJefeTaller">ID Jefe Taller:</label>
+        <input type="text" id="idJefeTaller" name="idJefeTaller" >
+
+        <input type="submit" value="Registrar Reparación">
+        <a href="/interfaz_P.html" class="">Volver </a>
+    </form>
+
+</body>
+</html>

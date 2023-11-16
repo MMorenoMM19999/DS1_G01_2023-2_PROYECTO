@@ -1,0 +1,57 @@
+/* Reset de estilos para quitar márgenes y padding predeterminados */
+body, h2, form, label, input, select, option {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+h2 {
+    color: #333; /* Texto negro */
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333; /* Texto negro */
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #e74c3c; /* Fondo rojo */
+    color: #fff; /* Texto blanco */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #c0392b; /* Fondo rojo más oscuro al pasar el ratón */
+}
+
+/* Estilos para hacer el formulario responsive */
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
