@@ -1,0 +1,37 @@
+<!--- UsuarioForm.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registro de Usuario y Contraseña</title>
+  </head>
+  <body>
+    <h2>
+      Registro de Usuario y Contraseña - Registro de Empleado: {{ empleado.id }}
+    </h2>
+    <form method="POST" action="{% url 'usuarioSignUp' %}">
+      {% csrf_token %}
+      <label for="empleado">Seleccione empleado:</label>
+      <select name="empleado" id="empleado" style="display: none">
+        {% for empleado in empleados %}
+        <option value="{{empleado.id_empleado}}">
+          {{empleado.nombre}} {{empleado.apellido}}
+        </option>
+        {% endfor %}
+      </select>
+
+      <input type="hidden" id="id_empleado" name="id_empleado" value="" />
+
+      {{ form.as_p }}
+
+      <input type="submit" value="Registrar" />
+    </form>
+
+    <script>
+      document
+        .getElementById("empleado")
+        .addEventListener("change", function () {
+          document.getElementsByName("id_empleado")[0].value = this.value;
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!--- CargoForm.html -->
+
+<h2>Asignar Cargo a Empleado</h2>
+
+<form method="post">
+  <select name="empleado" id="empleado-select">
+    {% for id, nombre in empleados %}
+    <option value="{{ id }}">{{ nombre }}</option>
+    {% endfor %}
+  </select>
+  {% for message in messages %}
+  <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+  {% endfor %}
+
+  <div id="form-fields"></div>
+
+  {% csrf_token %}
+  <button type="submit">Asignar Cargo a Empleado</button>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#empleado-select").change(function () {
+      $.ajax({
+        url: "/get_form_fields/",
+        data: {
+          id_empleado: $(this).val(),
+        },
+        dataType: "json",
+        success: function (data) {
+          $("#form-fields").empty();
+          $.each(data.form_fields, function (index, field_name) {
+            $("#form-fields").append(
+              '<label for="' + field_name + '">' + field_name + "</label>"
+            );
+            $("#form-fields").append(
+              '<input type="text" id="' +
+                field_name +
+                '" name="' +
+                field_name +
+                '">'
+            );
+          });
+        },
+      });
+    });
+  });
+</script>

@@ -1,0 +1,9 @@
+<!--- EmpleadoForm.html -->
+
+<h2>Registro de empleado</h2>
+
+<form method="post">
+  {% csrf_token %} {{ form.as_hidden }} {{ form.as_p }}
+
+  <button type="submit">Registrar Empleado</button>
+</form>

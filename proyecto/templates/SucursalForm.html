@@ -1,0 +1,14 @@
+<!-- SucursalForm.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registro de Sucursal</title>
+  </head>
+  <body>
+    <h2>Registro de Sucursal</h2>
+    <form method="POST">
+      {% csrf_token %} {{ form.as_p }}
+      <input type="submit" value="Registrar" />
+    </form>
+  </body>
+</html>
